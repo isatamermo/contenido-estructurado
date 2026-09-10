@@ -1,136 +1,1378 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <!--
-    HEAD
-    Contiene información sobre el documento.
-    Aquí podemos definir metadata, título, favicon y archivos externos.
-  -->
-
   <meta charset="UTF-8">
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  >
-  <meta
-    name="description"
-    content="Documento base para estudiar estructura HTML, semántica y cajas."
-  >
-  <title>HTML, estructura y cajas</title>
-  <!-- Favicon -->
-  <link rel="icon" href="favicon.ico">
-  <!-- Hoja de estilos externa -->
-  <link rel="stylesheet" href="./css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Índice de películas y documentales de tiburones: ficha técnica, descripción y representación del tiburón en cada obra.">
+  <title>Películas y documentales de tiburones</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  <!--
-    HEADER
-    Contenido introductorio del documento.
-  -->
   <header>
-
-    <h1>HTML, estructura y cajas</h1>
-
-    <p>
-      Los elementos HTML generan cajas, pero cada elemento tiene una función dentro del documento.
-    </p>
-
-    <!--
-      NAV
-      Contiene enlaces principales de navegación.
-    -->
-    <nav>
-      <a href="#elementos">Elementos</a>
-      <a href="#estructura">Estructura</a>
-      <a href="#jerarquia">Jerarquía</a>
-    </nav>
-
+    <h1>Películas y documentales de tiburones</h1>
   </header>
 
-  <!--
-    MAIN
-    Contiene el contenido principal del documento.
-  -->
+  <nav aria-labelledby="indice">
+    <h2 id="indice">Índice</h2>
+
+    <h3><a href="#peliculas">Películas</a></h3>
+    <ol>
+      <li><a href="#jaws">Jaws / Tiburón</a></li>
+      <li><a href="#deep-blue-sea">Deep Blue Sea / Alerta en lo profundo</a></li>
+      <li><a href="#open-water">Open Water / Mar abierto</a></li>
+      <li><a href="#the-shallows">The Shallows / Miedo profundo</a></li>
+      <li><a href="#forty-seven-meters-down">47 Meters Down / Terror a 47 metros</a></li>
+      <li><a href="#shark-night">Shark Night / Tiburones de agua dulce</a></li>
+      <li><a href="#jaws-2">Jaws 2 / Tiburón 2</a></li>
+      <li><a href="#jaws-3d">Jaws 3-D / Tiburón 3</a></li>
+      <li><a href="#jaws-the-revenge">Jaws: The Revenge / Tiburón, la venganza</a></li>
+      <li><a href="#the-reef">The Reef</a></li>
+      <li><a href="#the-reef-stalked">The Reef: Stalked</a></li>
+      <li><a href="#bait-3d">Bait 3D</a></li>
+      <li><a href="#under-paris">Under Paris / En las profundidades del Sena</a></li>
+    </ol>
+
+    <h3><a href="#documentales">Documentales</a></h3>
+    <ol start="14">
+      <li><a href="#sharkwater">Sharkwater</a></li>
+      <li><a href="#sharkwater-extinction">Sharkwater Extinction</a></li>
+      <li><a href="#playing-with-sharks">Playing with Sharks</a></li>
+      <li><a href="#fin">Fin</a></li>
+      <li><a href="#of-shark-and-man">Of Shark and Man</a></li>
+      <li><a href="#blue-water-white-death">Blue Water, White Death</a></li>
+      <li><a href="#shark-beach">Shark Beach with Chris Hemsworth</a></li>
+      <li><a href="#shark-vs-surfer">Shark vs. Surfer</a></li>
+      <li><a href="#paige-winter-story">Shark Attack Investigation: The Paige Winter Story</a></li>
+      <li><a href="#great-white-open-ocean">Great White Open Ocean</a></li>
+      <li><a href="#shark-gangs">Shark Gangs</a></li>
+      <li><a href="#shark-queens">Shark Queens</a></li>
+      <li><a href="#shark-women">Shark Women: Ghosted by Great Whites</a></li>
+      <li><a href="#envoy-shark-cull">Envoy: Shark Cull</a></li>
+      <li><a href="#beyond-the-cage-of-fear">Great White Shark: Beyond the Cage of Fear</a></li>
+      <li><a href="#shark-girl">Shark Girl</a></li>
+      <li><a href="#shark-nation">Shark Nation</a></li>
+      <li><a href="#toro-vs-martillo">Tiburón Toro vs Tiburón Martillo</a></li>
+      <li><a href="#tiburones-de-mexico">Tiburones de México</a></li>
+      <li><a href="#forecast-shark-attack">Ataques de Tiburones: ¿Tan Predecibles como el Clima?</a></li>
+      <li><a href="#man-vs-shark">¡Hombre se Enfrenta a un Tiburón!</a></li>
+      <li><a href="#big-sharks-rule">Los Tiburones Más Peligrosos del Mundo: ¡Descúbrelos!</a></li>
+      <li><a href="#documental-daily-tv">DOCUMENTAL DE TIBURÓN COMPLETO — Daily TV</a></li>
+    </ol>
+  </nav>
+
   <main>
 
-    <!--
-      SECTION
-      Agrupa contenido relacionado por un mismo tema.
-    -->
-    <section id="elementos">
+    <!-- ===================== PELÍCULAS ===================== -->
+    <section id="peliculas" aria-labelledby="titulo-peliculas">
+      <h2 id="titulo-peliculas">Películas</h2>
 
-      <h2>Los elementos HTML son cajas</h2>
+      <!-- 1 -->
+      <article id="jaws">
+        <header>
+          <h3>1. <cite><span lang="en">Jaws</span> / Tiburón</cite></h3>
+        </header>
+        <dl>
+          <dt>Tipo</dt><dd>Película</dd>
+          <dt>Género</dt><dd>Thriller / Terror / Drama</dd>
+          <dt>Sharksploitation</dt><dd>No / precursor</dd>
+          <dt>Año</dt><dd><time datetime="1975">1975</time></dd>
+          <dt>Duración</dt><dd><time datetime="PT124M">124 min</time></dd>
+          <dt>Director</dt><dd>Steven Spielberg</dd>
+          <dt>Productores</dt><dd>Richard D. Zanuck y David Brown</dd>
+          <dt>Presupuesto</dt><dd>aprox. 10 millones USD</dd>
+        </dl>
+        <section>
+          <h4>Descripción</h4>
+          <p>En la comunidad costera ficticia de Amity Island, un gran tiburón blanco comienza a atacar personas. El jefe de policía Martin Brody intenta cerrar las playas, pero los intereses turísticos de la comunidad interfieren con la decisión. Finalmente, Brody, el biólogo marino Matt Hooper y el cazador Quint salen al mar para localizar y matar al tiburón.</p>
+        </section>
+        <section>
+          <h4>Representación del tiburón</h4>
+          <p>El tiburón funciona como antagonista central y es asociado con peligro, muerte, persecución y terror. El montaje, la música y la manera en que se anticipa su aparición le atribuyen una presencia individual y una identidad narrativa cercana a la de un villano.</p>
+        </section>
+        <dl>
+          <dt>Mujeres en traje de baño como víctimas</dt><dd>Sí / pocas</dd>
+          <dt>Sexo del tiburón</dt><dd>-</dd>
+          <dt>Dónde verla</dt><dd><a href="https://www.universalpicturesathome.com/movies/jaws?utm_source=chatgpt.com" rel="noopener noreferrer">Universal Pictures</a></dd>
+          <dt>Categoría</dt><dd>Tiburón depredador</dd>
+          <dt>Especie</dt><dd>Tiburón blanco</dd>
+        </dl>
+        <footer>
+          <p><a href="#indice">Volver al índice</a></p>
+        </footer>
+      </article>
 
-      <p>
-        Cada elemento ocupa un espacio dentro del documento.
-        El navegador calcula su tamaño, posición y relación con otros elementos.
-      </p>
+      <!-- 2 -->
+      <article id="deep-blue-sea">
+        <header>
+          <h3>2. <cite><span lang="en">Deep Blue Sea</span> / Alerta en lo profundo</cite></h3>
+        </header>
+        <dl>
+          <dt>Tipo</dt><dd>Película</dd>
+          <dt>Género</dt><dd>Ciencia ficción / Terror / Thriller</dd>
+          <dt>Sharksploitation</dt><dd>Sí</dd>
+          <dt>Año</dt><dd><time datetime="1999">1999</time></dd>
+          <dt>Duración</dt><dd><time datetime="PT105M">105 min</time></dd>
+          <dt>Director</dt><dd>Renny Harlin</dd>
+          <dt>Productores</dt><dd>Akiva Goldsman, Tony Ludwig y Alan Riche</dd>
+          <dt>Presupuesto</dt><dd>aprox. 60 millones USD</dd>
+        </dl>
+        <section>
+          <h4>Descripción</h4>
+          <p>Un grupo de científicos modifica genéticamente tiburones mako mientras desarrolla un tratamiento para el Alzheimer. Los experimentos aumentan la capacidad cerebral de los animales, que comienzan a escapar de las instalaciones submarinas y atacar a los humanos.</p>
+        </section>
+        <section>
+          <h4>Representación del tiburón</h4>
+          <p>Los tiburones son construidos como animales extremadamente inteligentes, estratégicos y calculadores. Su comportamiento adquiere características humanas relacionadas con planificación, anticipación y manipulación, justificadas dentro de la historia mediante un discurso científico.</p>
+        </section>
+        <dl>
+          <dt>Mujeres en traje de baño como víctimas</dt><dd>No</dd>
+          <dt>Sexo del tiburón</dt><dd>Varios / -</dd>
+          <dt>Dónde verla</dt><dd>-</dd>
+          <dt>Categoría</dt><dd>Tiburón científico / mutante</dd>
+          <dt>Observaciones</dt><dd></dd>
+          <dt>Especie</dt><dd>Tiburón mako</dd>
+        </dl>
+        <footer>
+          <p><a href="#indice">Volver al índice</a></p>
+        </footer>
+      </article>
 
-      <!--
-        ARTICLE
-        Representa una unidad de contenido dentro de esta sección.
-      -->
-      <article>
+      <!-- 3 -->
+      <article id="open-water">
+        <header>
+          <h3>3. <cite><span lang="en">Open Water</span> / Mar abierto</cite></h3>
+        </header>
+        <dl>
+          <dt>Tipo</dt><dd>Película</dd>
+          <dt>Género</dt><dd>Terror / Supervivencia / Drama</dd>
+          <dt>Sharksploitation</dt><dd>Sí</dd>
+          <dt>Año</dt><dd><time datetime="2003">2003</time></dd>
+          <dt>Duración</dt><dd><time datetime="PT79M">79 min</time></dd>
+          <dt>Director</dt><dd>Chris Kentis</dd>
+          <dt>Productoras</dt><dd>Laura Lau y Estelle Lau</dd>
+          <dt>Presupuesto</dt><dd>aprox. 500,000 USD</dd>
+        </dl>
+        <section>
+          <h4>Descripción</h4>
+          <p>Susan y Daniel realizan una excursión de buceo durante sus vacaciones. Debido a un error en el conteo de pasajeros, la embarcación regresa sin ellos y ambos quedan abandonados en mar abierto. Mientras esperan ser rescatados, aparecen tiburones alrededor de la pareja.</p>
+        </section>
+        <section>
+          <h4>Representación del tiburón</h4>
+          <p>Los tiburones no funcionan como un único monstruo individual. Se presentan como animales que forman parte del entorno natural en el que los protagonistas han quedado vulnerables. El suspenso se genera mediante su presencia progresiva y la incertidumbre sobre cuándo ocurrirá un ataque.</p>
+        </section>
+        <dl>
+          <dt>Mujeres en traje de baño como víctimas</dt><dd>Sí / una</dd>
+          <dt>Sexo del tiburón</dt><dd>Varios / -</dd>
+          <dt>Dónde verla</dt><dd>-</dd>
+          <dt>Categoría</dt><dd>Supervivencia / encierro</dd>
+          <dt>Observaciones</dt><dd></dd>
+          <dt>Especie</dt><dd>Tiburón blanco</dd>
+        </dl>
+        <footer>
+          <p><a href="#indice">Volver al índice</a></p>
+        </footer>
+      </article>
 
-        <h3>No todas las cajas son iguales</h3>
+      <!-- 4 -->
+      <article id="the-shallows">
+        <header>
+          <h3>4. <cite><span lang="en">The Shallows</span> / Miedo profundo</cite></h3>
+        </header>
+        <dl>
+          <dt>Tipo</dt><dd>Película</dd>
+          <dt>Género</dt><dd>Thriller / Terror / Supervivencia</dd>
+          <dt>Sharksploitation</dt><dd>Sí</dd>
+          <dt>Año</dt><dd><time datetime="2016">2016</time></dd>
+          <dt>Duración</dt><dd><time datetime="PT86M">86 min</time></dd>
+          <dt>Director</dt><dd>Jaume Collet-Serra</dd>
+          <dt>Productores</dt><dd>Lynn Harris y Matti Leshem</dd>
+          <dt>Presupuesto</dt><dd>aprox. 17 millones USD</dd>
+        </dl>
+        <section>
+          <h4>Descripción</h4>
+          <p>Nancy, una joven surfista, llega a una playa aislada y es atacada por un gran tiburón blanco. Herida, queda atrapada sobre una roca cerca de la costa y debe encontrar una forma de regresar a tierra mientras el tiburón permanece en la zona.</p>
+        </section>
+        <section>
+          <h4>Representación del tiburón</h4>
+          <p>El tiburón funciona como un antagonista individual. La narración construye sus movimientos como una persecución constante de Nancy y le atribuye una insistencia que hace que el conflicto parezca personal entre humano y animal.</p>
+        </section>
+        <dl>
+          <dt>Mujeres en traje de baño como víctimas</dt><dd>Sí / una</dd>
+          <dt>Sexo del tiburón</dt><dd>-</dd>
+          <dt>Dónde verla</dt><dd>-</dd>
+          <dt>Categoría</dt><dd>Psicológico / thriller</dd>
+          <dt>Observaciones</dt><dd></dd>
+          <dt>Especie</dt><dd></dd>
+        </dl>
+        <footer>
+          <p><a href="#indice">Volver al índice</a></p>
+        </footer>
+      </article>
 
-        <p>
-          Un título, un párrafo y un enlace generan cajas,
-          pero tienen funciones diferentes.
-        </p>
+      <!-- 5 -->
+      <article id="forty-seven-meters-down">
+        <header>
+          <h3>5. <cite><span lang="en">47 Meters Down</span> / Terror a 47 metros</cite></h3>
+        </header>
+        <dl>
+          <dt>Tipo</dt><dd>Película</dd>
+          <dt>Género</dt><dd>Terror / Thriller / Supervivencia</dd>
+          <dt>Sharksploitation</dt><dd>Sí</dd>
+          <dt>Año</dt><dd><time datetime="2017">2017</time></dd>
+          <dt>Duración</dt><dd><time datetime="PT85M">85 min</time></dd>
+          <dt>Director</dt><dd>Johannes Roberts</dd>
+          <dt>Productores</dt><dd>James Harris y Mark Lane</dd>
+          <dt>Presupuesto</dt><dd>aprox. 5.3 millones USD</dd>
+        </dl>
+        <section>
+          <h4>Descripción</h4>
+          <p>Dos hermanas de vacaciones en México realizan una inmersión dentro de una jaula para observar tiburones blancos. El cable se rompe y ambas quedan atrapadas en el fondo del océano con poco oxígeno y varios tiburones alrededor.</p>
+        </section>
+        <section>
+          <h4>Representación del tiburón</h4>
+          <p>Los tiburones funcionan como amenaza constante. Gran parte del miedo se construye mediante la anticipación de su aparición, su tamaño y la dificultad de saber desde dónde pueden acercarse.</p>
+        </section>
+        <dl>
+          <dt>Mujeres en traje de baño como víctimas</dt><dd>Sí / dos</dd>
+          <dt>Sexo del tiburón</dt><dd>Varios / -</dd>
+          <dt>Dónde verla</dt><dd>-</dd>
+          <dt>Categoría</dt><dd>Supervivencia / encierro</dd>
+          <dt>Observaciones</dt><dd></dd>
+          <dt>Especie</dt><dd>Tiburón blanco</dd>
+        </dl>
+        <footer>
+          <p><a href="#indice">Volver al índice</a></p>
+        </footer>
+      </article>
 
-        <a href="#">Esto es un enlace</a>
+      <!-- 6 -->
+      <article id="shark-night">
+        <header>
+          <h3>6. <cite><span lang="en">Shark Night</span> / Tiburones de agua dulce</cite></h3>
+        </header>
+        <dl>
+          <dt>Tipo</dt><dd>Película</dd>
+          <dt>Género</dt><dd>Terror / Thriller</dd>
+          <dt>Sharksploitation</dt><dd>Sí</dd>
+          <dt>Año</dt><dd><time datetime="2011">2011</time></dd>
+          <dt>Duración</dt><dd><time datetime="PT90M">90 min</time></dd>
+          <dt>Director</dt><dd>David R. Ellis</dd>
+          <dt>Productores</dt><dd>Chris Briggs, Mike Fleiss y Lynette Howell</dd>
+          <dt>Presupuesto</dt><dd>aprox. 25 millones USD</dd>
+        </dl>
+        <section>
+          <h4>Descripción</h4>
+          <p>Un grupo de jóvenes pasa un fin de semana en una casa junto a un lago. Pronto descubren que diferentes especies de tiburones fueron introducidas deliberadamente en el agua. Los ataques forman parte de un plan organizado por personas.</p>
+        </section>
+        <section>
+          <h4>Representación del tiburón</h4>
+          <p>Los tiburones funcionan como instrumentos de violencia y espectáculo dentro de una estructura cercana al slasher. Aunque atacan a los personajes, la película establece que su presencia y los encuentros fueron provocados por humanos.</p>
+        </section>
+        <dl>
+          <dt>Mujeres en traje de baño como víctimas</dt><dd>Sí / muchas</dd>
+          <dt>Sexo del tiburón</dt><dd>Varios / -</dd>
+          <dt>Dónde verla</dt><dd>-</dd>
+          <dt>Categoría</dt><dd>Terror de explotación</dd>
+          <dt>Observaciones</dt><dd></dd>
+          <dt>Especie</dt><dd>Tiburón blanco</dd>
+        </dl>
+        <footer>
+          <p><a href="#indice">Volver al índice</a></p>
+        </footer>
+      </article>
 
+      <!-- 7 -->
+      <article id="jaws-2">
+        <header>
+          <h3>7. <cite><span lang="en">Jaws 2</span> / Tiburón 2</cite></h3>
+        </header>
+        <dl>
+          <dt>Tipo</dt><dd>Película</dd>
+          <dt>Género</dt><dd>Terror / Thriller / Aventura</dd>
+          <dt>Sharksploitation</dt><dd>Sí</dd>
+          <dt>Año</dt><dd><time datetime="1978">1978</time></dd>
+          <dt>Duración</dt><dd><time datetime="PT116M">116 min</time></dd>
+          <dt>Director</dt><dd>Jeannot Szwarc</dd>
+          <dt>Productores</dt><dd>Richard D. Zanuck y David Brown</dd>
+          <dt>Presupuesto</dt><dd>aprox. 20 millones USD</dd>
+        </dl>
+        <section>
+          <h4>Descripción</h4>
+          <p>Después de los acontecimientos de <cite lang="en">Jaws</cite>, nuevos incidentes ocurren cerca de Amity Island. Martin Brody sospecha que otro gran tiburón blanco está atacando la zona e intenta nuevamente advertir a la comunidad.</p>
+        </section>
+        <section>
+          <h4>Representación del tiburón</h4>
+          <p>El tiburón vuelve a funcionar como antagonista y amenaza deliberada. La estructura narrativa construye sus encuentros con los protagonistas como una persecución prolongada y repetitiva.</p>
+        </section>
+        <dl>
+          <dt>Mujeres en traje de baño como víctimas</dt><dd>Sí / varias</dd>
+          <dt>Sexo del tiburón</dt><dd>Hembra</dd>
+          <dt>Dónde verla</dt><dd><a href="https://www.universalpicturesathome.com/movies/jaws-2" rel="noopener noreferrer">Universal Pictures</a></dd>
+          <dt>Categoría</dt><dd>Tiburón depredador</dd>
+          <dt>Observaciones</dt><dd></dd>
+          <dt>Especie</dt><dd></dd>
+        </dl>
+        <footer>
+          <p><a href="#indice">Volver al índice</a></p>
+        </footer>
+      </article>
+
+      <!-- 8 -->
+      <article id="jaws-3d">
+        <header>
+          <h3>8. <cite><span lang="en">Jaws 3-D</span> / Tiburón 3</cite></h3>
+        </header>
+        <dl>
+          <dt>Tipo</dt><dd>Película</dd>
+          <dt>Género</dt><dd>Terror / Thriller</dd>
+          <dt>Sharksploitation</dt><dd>Sí</dd>
+          <dt>Año</dt><dd><time datetime="1983">1983</time></dd>
+          <dt>Duración</dt><dd><time datetime="PT99M">99 min</time></dd>
+          <dt>Director</dt><dd>Joe Alves</dd>
+          <dt>Productor</dt><dd>Rupert Hitzig</dd>
+          <dt>Presupuesto</dt><dd>aprox. 20.5 millones USD</dd>
+        </dl>
+        <section>
+          <h4>Descripción</h4>
+          <p>Una cría de tiburón blanco entra en las instalaciones submarinas de SeaWorld. Después aparece un tiburón adulto de gran tamaño que comienza a amenazar a trabajadores y visitantes del parque.</p>
+        </section>
+        <section>
+          <h4>Representación del tiburón</h4>
+          <p>El tiburón adulto es una hembra vinculada narrativamente con su cría. La maternidad funciona como parte de la explicación de su presencia, aunque la película la transforma posteriormente en un monstruo de gran tamaño y principal amenaza.</p>
+        </section>
+        <dl>
+          <dt>Mujeres en traje de baño como víctimas</dt><dd>Sí / varias</dd>
+          <dt>Sexo del tiburón</dt><dd>Hembra</dd>
+          <dt>Dónde verla</dt><dd><a href="https://www.universalpicturesathome.com/movies/jaws-3" rel="noopener noreferrer">Universal Pictures</a></dd>
+          <dt>Categoría</dt><dd>Tiburón depredador</dd>
+          <dt>Observaciones</dt><dd></dd>
+          <dt>Especie</dt><dd>Tiburón blanco</dd>
+        </dl>
+        <footer>
+          <p><a href="#indice">Volver al índice</a></p>
+        </footer>
+      </article>
+
+      <!-- 9 -->
+      <article id="jaws-the-revenge">
+        <header>
+          <h3>9. <cite><span lang="en">Jaws: The Revenge</span> / Tiburón, la venganza</cite></h3>
+        </header>
+        <dl>
+          <dt>Tipo</dt><dd>Película</dd>
+          <dt>Género</dt><dd>Terror / Thriller</dd>
+          <dt>Sharksploitation</dt><dd>Sí</dd>
+          <dt>Año</dt><dd><time datetime="1987">1987</time></dd>
+          <dt>Duración</dt><dd><time datetime="PT89M">89 min</time></dd>
+          <dt>Director</dt><dd>Joseph Sargent</dd>
+          <dt>Productor</dt><dd>Joseph Sargent</dd>
+          <dt>Presupuesto</dt><dd>aprox. 23 millones USD</dd>
+        </dl>
+        <section>
+          <h4>Descripción</h4>
+          <p>Después de la muerte de uno de sus hijos por un tiburón, Ellen Brody viaja a las Bahamas. Allí aparece otro gran tiburón blanco y Ellen comienza a creer que el animal está persiguiendo deliberadamente a su familia.</p>
+        </section>
+        <section>
+          <h4>Representación del tiburón</h4>
+          <p>El tiburón recibe una de las representaciones más antropomorfizadas de la saga. La película le atribuye una motivación semejante a la venganza y construye su comportamiento como una persecución dirigida específicamente contra la familia Brody.</p>
+        </section>
+        <dl>
+          <dt>Mujeres en traje de baño como víctimas</dt><dd>Sí / pocas</dd>
+          <dt>Sexo del tiburón</dt><dd>-</dd>
+          <dt>Dónde verla</dt><dd><a href="https://www.universalpicturesathome.com/movies/jaws-the-revenge" rel="noopener noreferrer">Universal Pictures</a></dd>
+          <dt>Categoría</dt><dd>Tiburón depredador</dd>
+          <dt>Observaciones</dt><dd></dd>
+          <dt>Especie</dt><dd>Tiburón blanco</dd>
+        </dl>
+        <footer>
+          <p><a href="#indice">Volver al índice</a></p>
+        </footer>
+      </article>
+
+      <!-- 10 -->
+      <article id="the-reef">
+        <header>
+          <h3>10. <cite lang="en">The Reef</cite></h3>
+        </header>
+        <dl>
+          <dt>Tipo</dt><dd>Película</dd>
+          <dt>Género</dt><dd>Terror / Thriller / Supervivencia</dd>
+          <dt>Sharksploitation</dt><dd>Sí</dd>
+          <dt>Año</dt><dd><time datetime="2010">2010</time></dd>
+          <dt>Duración</dt><dd><time datetime="PT94M">94 min</time></dd>
+          <dt>Director</dt><dd>Andrew Traucki</dd>
+          <dt>Productor</dt><dd>Michael Robertson</dd>
+          <dt>Presupuesto</dt><dd>-</dd>
+        </dl>
+        <section>
+          <h4>Descripción</h4>
+          <p>Un grupo queda varado después de que su embarcación vuelca cerca de la Gran Barrera de Coral. Algunos deciden nadar hacia una isla mientras un gran tiburón blanco comienza a acercarse al grupo.</p>
+        </section>
+        <section>
+          <h4>Representación del tiburón</h4>
+          <p>El tiburón es presentado como un depredador dentro de su propio entorno, pero el montaje construye sus apariciones como una persecución continua de los protagonistas. La amenaza depende principalmente de la vulnerabilidad humana en mar abierto.</p>
+        </section>
+        <dl>
+          <dt>Mujeres en traje de baño como víctimas</dt><dd>Sí / pocas</dd>
+          <dt>Sexo del tiburón</dt><dd>-</dd>
+          <dt>Dónde verla</dt><dd>-</dd>
+          <dt>Categoría</dt><dd>Tiburón depredador</dd>
+          <dt>Observaciones</dt><dd></dd>
+          <dt>Especie</dt><dd>Tiburón blanco</dd>
+        </dl>
+        <footer>
+          <p><a href="#indice">Volver al índice</a></p>
+        </footer>
+      </article>
+
+      <!-- 11 -->
+      <article id="the-reef-stalked">
+        <header>
+          <h3>11. <cite lang="en">The Reef: Stalked</cite></h3>
+        </header>
+        <dl>
+          <dt>Tipo</dt><dd>Película</dd>
+          <dt>Género</dt><dd>Terror / Thriller / Supervivencia</dd>
+          <dt>Sharksploitation</dt><dd>Sí</dd>
+          <dt>Año</dt><dd><time datetime="2022">2022</time></dd>
+          <dt>Duración</dt><dd><time datetime="PT93M">93 min</time></dd>
+          <dt>Director</dt><dd>Andrew Traucki</dd>
+          <dt>Productores</dt><dd>Michael Robertson, Neal Kingston y Jack Christian</dd>
+          <dt>Presupuesto</dt><dd>-</dd>
+        </dl>
+        <section>
+          <h4>Descripción</h4>
+          <p>Nic viaja con un grupo de mujeres a una isla tropical después de vivir un acontecimiento traumático. Durante una expedición en kayak, un tiburón comienza a aparecer cerca del grupo y amenaza su regreso.</p>
+        </section>
+        <section>
+          <h4>Representación del tiburón</h4>
+          <p>El comportamiento del tiburón se estructura como un acecho. El propio título utiliza <i lang="en">stalked</i> para describir la relación entre el animal y las protagonistas, atribuyéndole una persecución persistente.</p>
+        </section>
+        <dl>
+          <dt>Mujeres en traje de baño como víctimas</dt><dd>Sí / varias</dd>
+          <dt>Sexo del tiburón</dt><dd>-</dd>
+          <dt>Dónde verla</dt><dd>-</dd>
+          <dt>Categoría</dt><dd>Psicológico / thriller</dd>
+          <dt>Observaciones</dt><dd></dd>
+          <dt>Especie</dt><dd>Tiburón blanco</dd>
+        </dl>
+        <footer>
+          <p><a href="#indice">Volver al índice</a></p>
+        </footer>
+      </article>
+
+      <!-- 12 -->
+      <article id="bait-3d">
+        <header>
+          <h3>12. <cite lang="en">Bait 3D</cite></h3>
+        </header>
+        <dl>
+          <dt>Tipo</dt><dd>Película</dd>
+          <dt>Género</dt><dd>Terror / Acción / Catástrofe</dd>
+          <dt>Sharksploitation</dt><dd>Sí</dd>
+          <dt>Año</dt><dd><time datetime="2012">2012</time></dd>
+          <dt>Duración</dt><dd><time datetime="PT93M">93 min</time></dd>
+          <dt>Director</dt><dd>Kimble Rendall</dd>
+          <dt>Productor</dt><dd>Gary Hamilton</dd>
+          <dt>Presupuesto</dt><dd>aprox. 20 millones USD</dd>
+        </dl>
+        <section>
+          <h4>Descripción</h4>
+          <p>Un tsunami inunda un supermercado costero australiano y deja atrapadas a varias personas. Con el agua también entran grandes tiburones blancos, que comienzan a moverse entre los pasillos inundados.</p>
+        </section>
+        <section>
+          <h4>Representación del tiburón</h4>
+          <p>Los tiburones son tratados principalmente como monstruos de una película de catástrofe. Su presencia traslada el miedo asociado al océano hacia un espacio cotidiano y cerrado.</p>
+        </section>
+        <dl>
+          <dt>Mujeres en traje de baño como víctimas</dt><dd>No</dd>
+          <dt>Sexo del tiburón</dt><dd>Varios / -</dd>
+          <dt>Dónde verla</dt><dd>-</dd>
+          <dt>Categoría</dt><dd>Catástrofe / absurdo</dd>
+          <dt>Observaciones</dt><dd></dd>
+          <dt>Especie</dt><dd>Tiburón blanco</dd>
+        </dl>
+        <footer>
+          <p><a href="#indice">Volver al índice</a></p>
+        </footer>
+      </article>
+
+      <!-- 13 -->
+      <article id="under-paris">
+        <header>
+          <h3>13. <cite><span lang="en">Under Paris</span> / En las profundidades del Sena</cite></h3>
+        </header>
+        <dl>
+          <dt>Tipo</dt><dd>Película</dd>
+          <dt>Género</dt><dd>Terror / Thriller / Acción</dd>
+          <dt>Sharksploitation</dt><dd>Sí</dd>
+          <dt>Año</dt><dd><time datetime="2024">2024</time></dd>
+          <dt>Duración</dt><dd><time datetime="PT104M">104 min</time></dd>
+          <dt>Director</dt><dd>Xavier Gens</dd>
+          <dt>Productor</dt><dd>Vincent Roget</dd>
+          <dt>Presupuesto</dt><dd>aprox. 19.6 millones EUR</dd>
+        </dl>
+        <section>
+          <h4>Descripción</h4>
+          <p>Una científica descubre que un enorme tiburón mako llamado Lilith ha llegado al río Sena poco antes de una competencia de triatlón en París. El animal demuestra una capacidad de adaptación y reproducción extraordinaria, provocando una crisis en la ciudad.</p>
+        </section>
+        <section>
+          <h4>Representación del tiburón</h4>
+          <p>Lilith es presentada como una anomalía biológica de gran tamaño y capacidad reproductiva. La película combina explicaciones científicas con características exageradas que transforman al tiburón en una amenaza monstruosa capaz de alterar un ecosistema completo.</p>
+        </section>
+        <dl>
+          <dt>Mujeres en traje de baño como víctimas</dt><dd>Sí / muchas</dd>
+          <dt>Sexo del tiburón</dt><dd>Hembra</dd>
+          <dt>Dónde verla</dt><dd><a href="https://www.netflix.com/title/81210788" rel="noopener noreferrer">Netflix</a></dd>
+          <dt>Categoría</dt><dd>Eco-horror</dd>
+          <dt>Observaciones</dt><dd></dd>
+          <dt>Especie</dt><dd>Tiburón mako</dd>
+        </dl>
+        <footer>
+          <p><a href="#indice">Volver al índice</a></p>
+        </footer>
       </article>
 
     </section>
 
-    <section id="estructura">
+    <!-- ===================== DOCUMENTALES ===================== -->
+    <section id="documentales" aria-labelledby="titulo-documentales">
+      <h2 id="titulo-documentales">Documentales</h2>
 
-      <h2>Las cajas forman estructuras</h2>
-
-      <p>
-        Una caja puede contener otras cajas.
-        Las etiquetas HTML describen cómo se relaciona cada parte del contenido.
-      </p>
-
-      <article>
-
-        <h3>Una estructura contiene más estructuras</h3>
-
-        <p>
-          Este artículo está dentro de una sección y contiene
-          a su vez un título y un párrafo.
-        </p>
-
+      <!-- 14 -->
+      <article id="sharkwater">
+        <header>
+          <h3>14. <cite lang="en">Sharkwater</cite></h3>
+        </header>
+        <dl>
+          <dt>Tipo</dt><dd>Documental</dd>
+          <dt>Género</dt><dd>Ambiental / Conservación / Naturaleza</dd>
+          <dt>Sharksploitation</dt><dd>No</dd>
+          <dt>Año</dt><dd><time datetime="2006">2006</time></dd>
+          <dt>Duración</dt><dd><time datetime="PT89M">89 min</time></dd>
+          <dt>Director</dt><dd>Rob Stewart</dd>
+          <dt>Productor</dt><dd>Rob Stewart</dd>
+          <dt>Presupuesto</dt><dd>-</dd>
+        </dl>
+        <section>
+          <h4>Descripción</h4>
+          <p>Rob Stewart investiga la explotación de los tiburones, la pesca y el comercio de sus aletas. El documental recorre distintas regiones para mostrar las consecuencias ecológicas de estas prácticas y cuestionar el miedo cultural hacia los tiburones.</p>
+        </section>
+        <section>
+          <h4>Representación del tiburón</h4>
+          <p>Los tiburones son representados como especies amenazadas por la actividad humana. La narrativa desplaza al tiburón de la posición de agresor y centra la violencia en la pesca, explotación y eliminación de sus poblaciones.</p>
+        </section>
+        <dl>
+          <dt>Mujeres en traje de baño como víctimas</dt><dd>No</dd>
+          <dt>Sexo del tiburón</dt><dd>Varios</dd>
+          <dt>Dónde verla</dt><dd><a href="https://www.sharkwater.com/?utm_source=chatgpt.com" rel="noopener noreferrer">Sharkwater</a></dd>
+          <dt>Categoría</dt><dd>Documental</dd>
+          <dt>Observaciones</dt><dd></dd>
+          <dt>Especie</dt><dd>-</dd>
+        </dl>
+        <footer>
+          <p><a href="#indice">Volver al índice</a></p>
+        </footer>
       </article>
 
-    </section>
+      <!-- 15 -->
+      <article id="sharkwater-extinction">
+        <header>
+          <h3>15. <cite lang="en">Sharkwater Extinction</cite></h3>
+        </header>
+        <dl>
+          <dt>Tipo</dt><dd>Documental</dd>
+          <dt>Género</dt><dd>Ambiental / Investigación / Conservación</dd>
+          <dt>Sharksploitation</dt><dd>No</dd>
+          <dt>Año</dt><dd><time datetime="2018">2018</time></dd>
+          <dt>Duración</dt><dd><time datetime="PT85M">85 min</time></dd>
+          <dt>Director</dt><dd>Rob Stewart</dd>
+          <dt>Productores</dt><dd>Sandra Campbell, Brian Stewart, Rob Stewart, Nick Hector y Karen Shaw</dd>
+          <dt>Presupuesto</dt><dd>-</dd>
+        </dl>
+        <section>
+          <h4>Descripción</h4>
+          <p>Rob Stewart investiga la pesca ilegal, el comercio de aletas de tiburón y otras industrias relacionadas con su muerte. El documental registra distintas prácticas humanas que afectan a sus poblaciones.</p>
+        </section>
+        <section>
+          <h4>Representación del tiburón</h4>
+          <p>El tiburón aparece como víctima de explotación y como especie amenazada. La amenaza narrativa se desplaza del animal hacia las actividades humanas que producen su disminución.</p>
+        </section>
+        <dl>
+          <dt>Mujeres en traje de baño como víctimas</dt><dd>No</dd>
+          <dt>Sexo del tiburón</dt><dd>Varios</dd>
+          <dt>Dónde verla</dt><dd><a href="https://www.sharkwater.com/?utm_source=chatgpt.com" rel="noopener noreferrer">Sharkwater</a></dd>
+          <dt>Categoría</dt><dd>Documental</dd>
+          <dt>Observaciones</dt><dd></dd>
+          <dt>Especie</dt><dd>-</dd>
+        </dl>
+        <footer>
+          <p><a href="#indice">Volver al índice</a></p>
+        </footer>
+      </article>
 
-    <section id="jerarquia">
+      <!-- 16 -->
+      <article id="playing-with-sharks">
+        <header>
+          <h3>16. <cite lang="en">Playing with Sharks</cite></h3>
+        </header>
+        <dl>
+          <dt>Tipo</dt><dd>Documental</dd>
+          <dt>Género</dt><dd>Biográfico / Naturaleza / Conservación</dd>
+          <dt>Sharksploitation</dt><dd>No</dd>
+          <dt>Año</dt><dd><time datetime="2021">2021</time></dd>
+          <dt>Duración</dt><dd><time datetime="PT91M">91 min</time></dd>
+          <dt>Directora</dt><dd>Sally Aitken</dd>
+          <dt>Productores</dt><dd>-</dd>
+          <dt>Presupuesto</dt><dd>-</dd>
+        </dl>
+        <section>
+          <h4>Descripción</h4>
+          <p>El documental sigue la trayectoria de Valerie Taylor, fotógrafa y cineasta submarina que pasó de la pesca deportiva a la defensa y conservación de tiburones. También aborda su participación en la filmación de tiburones reales para <cite lang="en">Jaws</cite>.</p>
+        </section>
+        <section>
+          <h4>Representación del tiburón</h4>
+          <p>Los tiburones aparecen como animales que pueden ser observados de cerca y estudiados sin que el encuentro implique necesariamente un ataque. La representación cambia a lo largo de la trayectoria de Taylor desde el animal cazado hacia el animal protegido.</p>
+        </section>
+        <dl>
+          <dt>Mujeres en traje de baño como víctimas</dt><dd>No</dd>
+          <dt>Sexo del tiburón</dt><dd>Varios</dd>
+          <dt>Dónde verla</dt><dd><a href="https://www.disneyplus.com/en-mx/browse/entity-b4d671dc-c37b-4c8b-9702-38592eacf465?utm_source=chatgpt.com" rel="noopener noreferrer">Disney+</a></dd>
+          <dt>Categoría</dt><dd>Documental</dd>
+          <dt>Observaciones</dt><dd></dd>
+          <dt>Especie</dt><dd>-</dd>
+        </dl>
+        <footer>
+          <p><a href="#indice">Volver al índice</a></p>
+        </footer>
+      </article>
 
-      <h2>Las etiquetas crean jerarquía</h2>
+      <!-- 17 -->
+      <article id="fin">
+        <header>
+          <h3>17. <cite lang="en">Fin</cite></h3>
+        </header>
+        <dl>
+          <dt>Tipo</dt><dd>Documental</dd>
+          <dt>Género</dt><dd>Naturaleza / Investigación / Conservación</dd>
+          <dt>Sharksploitation</dt><dd>No</dd>
+          <dt>Año</dt><dd><time datetime="2021">2021</time></dd>
+          <dt>Duración</dt><dd>aprox. <time datetime="PT100M">100 min</time></dd>
+          <dt>Director</dt><dd>Eli Roth</dd>
+          <dt>Productores</dt><dd>Craig Piligian, Gretchen Stockdale, Nicholas Caprio y Mohamed El Manasterly</dd>
+          <dt>Presupuesto</dt><dd>-</dd>
+        </dl>
+        <section>
+          <h4>Descripción</h4>
+          <p>Eli Roth acompaña a científicos, investigadores y activistas para documentar las industrias vinculadas con la muerte de tiburones y el impacto de su explotación.</p>
+        </section>
+        <section>
+          <h4>Representación del tiburón</h4>
+          <p>El documental emplea recursos asociados con el terror, pero sitúa al tiburón como víctima. Las imágenes de violencia se concentran principalmente en aquello que los humanos hacen a los animales.</p>
+        </section>
+        <dl>
+          <dt>Mujeres en traje de baño como víctimas</dt><dd>No</dd>
+          <dt>Sexo del tiburón</dt><dd>Varios</dd>
+          <dt>Dónde verla</dt><dd>-</dd>
+          <dt>Categoría</dt><dd>Documental</dd>
+          <dt>Observaciones</dt><dd></dd>
+          <dt>Especie</dt><dd>-</dd>
+        </dl>
+        <footer>
+          <p><a href="#indice">Volver al índice</a></p>
+        </footer>
+      </article>
 
-      <p>
-        Un h1 representa el título principal.
-        Un h2 identifica una sección.
-        Un h3 introduce un nivel secundario.
-      </p>
+      <!-- 18 -->
+      <article id="of-shark-and-man">
+        <header>
+          <h3>18. <cite lang="en">Of Shark and Man</cite></h3>
+        </header>
+        <dl>
+          <dt>Tipo</dt><dd>Documental</dd>
+          <dt>Género</dt><dd>Aventura / Naturaleza</dd>
+          <dt>Sharksploitation</dt><dd>No</dd>
+          <dt>Año</dt><dd><time datetime="2017">2017</time></dd>
+          <dt>Duración</dt><dd><time datetime="PT84M">84 min</time></dd>
+          <dt>Director</dt><dd>David Diley</dd>
+          <dt>Productor</dt><dd>David Diley</dd>
+          <dt>Presupuesto</dt><dd>-</dd>
+        </dl>
+        <section>
+          <h4>Descripción</h4>
+          <p>David Diley viaja a Fiji para documentar Shark Reef, donde buzos interactúan con tiburones toro y otras especies. También analiza la relación entre turismo, conservación, economía local y tiburones.</p>
+        </section>
+        <section>
+          <h4>Representación del tiburón</h4>
+          <p>Los tiburones son representados dentro de relaciones de coexistencia con los humanos. La película reduce la figura del animal como monstruo individual y lo sitúa dentro de un ecosistema y una red económica y cultural.</p>
+        </section>
+        <dl>
+          <dt>Mujeres en traje de baño como víctimas</dt><dd>No</dd>
+          <dt>Sexo del tiburón</dt><dd>Varios</dd>
+          <dt>Dónde verla</dt><dd>-</dd>
+          <dt>Categoría</dt><dd>Documental</dd>
+          <dt>Observaciones</dt><dd></dd>
+          <dt>Especie</dt><dd>Tiburón toro</dd>
+        </dl>
+        <footer>
+          <p><a href="#indice">Volver al índice</a></p>
+        </footer>
+      </article>
+
+      <!-- 19 -->
+      <article id="blue-water-white-death">
+        <header>
+          <h3>19. <cite lang="en">Blue Water, White Death</cite></h3>
+        </header>
+        <dl>
+          <dt>Tipo</dt><dd>Documental</dd>
+          <dt>Género</dt><dd>Naturaleza / Aventura</dd>
+          <dt>Sharksploitation</dt><dd>No</dd>
+          <dt>Año</dt><dd><time datetime="1971">1971</time></dd>
+          <dt>Duración</dt><dd><time datetime="PT99M">99 min</time></dd>
+          <dt>Directores</dt><dd>Peter Gimbel y James Lipscomb</dd>
+          <dt>Productor</dt><dd>Peter Gimbel</dd>
+          <dt>Presupuesto</dt><dd>-</dd>
+        </dl>
+        <section>
+          <h4>Descripción</h4>
+          <p>Una expedición busca localizar y filmar grandes tiburones blancos en mar abierto. El documental registra el viaje, las inmersiones y los encuentros del equipo con diferentes tiburones.</p>
+        </section>
+        <section>
+          <h4>Representación del tiburón</h4>
+          <p>El gran tiburón blanco aparece como un depredador extraordinario, peligroso y difícil de encontrar. La narrativa combina observación naturalista con anticipación y riesgo alrededor del encuentro con el animal.</p>
+        </section>
+        <dl>
+          <dt>Mujeres en traje de baño como víctimas</dt><dd>No</dd>
+          <dt>Sexo del tiburón</dt><dd>Varios / -</dd>
+          <dt>Dónde verla</dt><dd>-</dd>
+          <dt>Categoría</dt><dd>Documental</dd>
+          <dt>Observaciones</dt><dd></dd>
+          <dt>Especie</dt><dd>Tiburón blanco</dd>
+        </dl>
+        <footer>
+          <p><a href="#indice">Volver al índice</a></p>
+        </footer>
+      </article>
+
+      <!-- 20 -->
+      <article id="shark-beach">
+        <header>
+          <h3>20. <cite lang="en">Shark Beach with Chris Hemsworth</cite></h3>
+        </header>
+        <dl>
+          <dt>Tipo</dt><dd>Documental / Especial televisivo</dd>
+          <dt>Género</dt><dd>Naturaleza / Ciencia / Conservación</dd>
+          <dt>Sharksploitation</dt><dd>No</dd>
+          <dt>Año</dt><dd><time datetime="2021">2021</time></dd>
+          <dt>Duración</dt><dd>aprox. <time datetime="PT44M">44 min</time></dd>
+          <dt>Director</dt><dd>Sally Aitken</dd>
+          <dt>Productores</dt><dd>-</dd>
+          <dt>Presupuesto</dt><dd>-</dd>
+        </dl>
+        <section>
+          <h4>Descripción</h4>
+          <p>Chris Hemsworth se reúne con especialistas para estudiar el comportamiento de los tiburones y explorar formas de reducir los encuentros peligrosos entre humanos y estos animales.</p>
+        </section>
+        <section>
+          <h4>Representación del tiburón</h4>
+          <p>El tiburón se presenta como un animal cuyo comportamiento puede analizarse científicamente. El conflicto se explica principalmente como resultado del encuentro entre humanos y tiburones dentro de espacios compartidos.</p>
+        </section>
+        <dl>
+          <dt>Mujeres en traje de baño como víctimas</dt><dd>No</dd>
+          <dt>Sexo del tiburón</dt><dd>Varios</dd>
+          <dt>Dónde verla</dt><dd><a href="https://www.disneyplus.com/" rel="noopener noreferrer">Disney+</a></dd>
+          <dt>Categoría</dt><dd>Documental</dd>
+          <dt>Observaciones</dt><dd></dd>
+          <dt>Especie</dt><dd>-</dd>
+        </dl>
+        <footer>
+          <p><a href="#indice">Volver al índice</a></p>
+        </footer>
+      </article>
+
+      <!-- 21 -->
+      <article id="shark-vs-surfer">
+        <header>
+          <h3>21. <cite lang="en">Shark vs. Surfer</cite></h3>
+        </header>
+        <dl>
+          <dt>Tipo</dt><dd>Documental / Especial televisivo</dd>
+          <dt>Género</dt><dd>Naturaleza / Investigación</dd>
+          <dt>Sharksploitation</dt><dd>No</dd>
+          <dt>Año</dt><dd><time datetime="2020">2020</time></dd>
+          <dt>Duración</dt><dd>aprox. <time datetime="PT44M">44 min</time></dd>
+          <dt>Director</dt><dd>-</dd>
+          <dt>Productor</dt><dd>-</dd>
+          <dt>Presupuesto</dt><dd>-</dd>
+        </dl>
+        <section>
+          <h4>Descripción</h4>
+          <p>El programa analiza encuentros entre surfistas y tiburones mediante testimonios, imágenes registradas y explicaciones de especialistas sobre las posibles causas de los incidentes.</p>
+        </section>
+        <section>
+          <h4>Representación del tiburón</h4>
+          <p>Combina explicaciones científicas con imágenes y relatos de ataques. El tiburón aparece simultáneamente como objeto de investigación y como fuente de peligro para quienes realizan actividades acuáticas.</p>
+        </section>
+        <dl>
+          <dt>Mujeres en traje de baño como víctimas</dt><dd>Pocas</dd>
+          <dt>Sexo del tiburón</dt><dd>Varios</dd>
+          <dt>Dónde verla</dt><dd>-</dd>
+          <dt>Categoría</dt><dd>Documental</dd>
+          <dt>Observaciones</dt><dd></dd>
+          <dt>Especie</dt><dd>-</dd>
+        </dl>
+        <footer>
+          <p><a href="#indice">Volver al índice</a></p>
+        </footer>
+      </article>
+
+      <!-- 22 -->
+      <article id="paige-winter-story">
+        <header>
+          <h3>22. <cite lang="en">Shark Attack Investigation: The Paige Winter Story</cite></h3>
+        </header>
+        <dl>
+          <dt>Tipo</dt><dd>Documental / Especial televisivo</dd>
+          <dt>Género</dt><dd>Científico / Biográfico</dd>
+          <dt>Sharksploitation</dt><dd>No</dd>
+          <dt>Año</dt><dd><time datetime="2020">2020</time></dd>
+          <dt>Duración</dt><dd>aprox. <time datetime="PT44M">44 min</time></dd>
+          <dt>Director</dt><dd>-</dd>
+          <dt>Productor</dt><dd>-</dd>
+          <dt>Presupuesto</dt><dd>-</dd>
+        </dl>
+        <section>
+          <h4>Descripción</h4>
+          <p>Reconstruye el ataque sufrido por Paige Winter, una adolescente que perdió parte de una pierna y varios dedos después del encuentro con un tiburón. Especialistas investigan las condiciones y posibles causas del incidente.</p>
+        </section>
+        <section>
+          <h4>Representación del tiburón</h4>
+          <p>El episodio parte de un ataque real, pero intenta explicar el comportamiento del animal mediante factores ambientales y biológicos en lugar de atribuirle una intención moral.</p>
+        </section>
+        <dl>
+          <dt>Mujeres en traje de baño como víctimas</dt><dd>Sí / una</dd>
+          <dt>Sexo del tiburón</dt><dd>-</dd>
+          <dt>Dónde verla</dt><dd>-</dd>
+          <dt>Categoría</dt><dd>Documental</dd>
+          <dt>Observaciones</dt><dd></dd>
+          <dt>Especie</dt><dd>-</dd>
+        </dl>
+        <footer>
+          <p><a href="#indice">Volver al índice</a></p>
+        </footer>
+      </article>
+
+      <!-- 23 -->
+      <article id="great-white-open-ocean">
+        <header>
+          <h3>23. <cite lang="en">Great White Open Ocean</cite></h3>
+        </header>
+        <dl>
+          <dt>Tipo</dt><dd>Documental / Especial televisivo</dd>
+          <dt>Género</dt><dd>Naturaleza / Ciencia / Supervivencia</dd>
+          <dt>Sharksploitation</dt><dd>No</dd>
+          <dt>Año</dt><dd><time datetime="2022">2022</time></dd>
+          <dt>Duración</dt><dd>aprox. <time datetime="PT44M">44 min</time></dd>
+          <dt>Director</dt><dd>-</dd>
+          <dt>Productor</dt><dd>-</dd>
+          <dt>Presupuesto</dt><dd>-</dd>
+        </dl>
+        <section>
+          <h4>Descripción</h4>
+          <p>Jimi Partington regresa al océano después de haber vivido un encuentro cercano con un gran tiburón blanco. El documental registra su regreso y nuevos acercamientos al animal.</p>
+        </section>
+        <section>
+          <h4>Representación del tiburón</h4>
+          <p>El tiburón se presenta mediante una combinación de observación científica y peligro. Su tamaño, proximidad y capacidad de ataque son utilizados para construir tensión alrededor del encuentro.</p>
+        </section>
+        <dl>
+          <dt>Mujeres en traje de baño como víctimas</dt><dd>No</dd>
+          <dt>Sexo del tiburón</dt><dd>-</dd>
+          <dt>Dónde verla</dt><dd>-</dd>
+          <dt>Categoría</dt><dd>Documental</dd>
+          <dt>Observaciones</dt><dd></dd>
+          <dt>Especie</dt><dd>Tiburón blanco</dd>
+        </dl>
+        <footer>
+          <p><a href="#indice">Volver al índice</a></p>
+        </footer>
+      </article>
+
+      <!-- 24 -->
+      <article id="shark-gangs">
+        <header>
+          <h3>24. <cite lang="en">Shark Gangs</cite></h3>
+        </header>
+        <dl>
+          <dt>Tipo</dt><dd>Documental / Especial televisivo</dd>
+          <dt>Género</dt><dd>Naturaleza / Ciencia</dd>
+          <dt>Sharksploitation</dt><dd>No</dd>
+          <dt>Año</dt><dd><time datetime="2021">2021</time></dd>
+          <dt>Duración</dt><dd>aprox. <time datetime="PT44M">44 min</time></dd>
+          <dt>Director</dt><dd>-</dd>
+          <dt>Productor</dt><dd>-</dd>
+          <dt>Presupuesto</dt><dd>-</dd>
+        </dl>
+        <section>
+          <h4>Descripción</h4>
+          <p>Investigadores estudian por qué algunas especies de tiburones forman agrupaciones y qué tipo de interacciones sociales pueden producirse entre los individuos.</p>
+        </section>
+        <section>
+          <h4>Representación del tiburón</h4>
+          <p>Los tiburones se presentan como animales capaces de mantener relaciones e interacciones sociales. El término <i lang="en">gangs</i> utiliza una categoría humana asociada con grupos organizados para describir estas agrupaciones animales.</p>
+        </section>
+        <dl>
+          <dt>Mujeres en traje de baño como víctimas</dt><dd>No</dd>
+          <dt>Sexo del tiburón</dt><dd>Varios</dd>
+          <dt>Dónde verla</dt><dd>-</dd>
+          <dt>Categoría</dt><dd>Documental</dd>
+          <dt>Observaciones</dt><dd></dd>
+          <dt>Especie</dt><dd>-</dd>
+        </dl>
+        <footer>
+          <p><a href="#indice">Volver al índice</a></p>
+        </footer>
+      </article>
+
+      <!-- 25 -->
+      <article id="shark-queens">
+        <header>
+          <h3>25. <cite lang="en">Shark Queens</cite></h3>
+        </header>
+        <dl>
+          <dt>Tipo</dt><dd>Documental / Especial televisivo</dd>
+          <dt>Género</dt><dd>Naturaleza / Ciencia</dd>
+          <dt>Sharksploitation</dt><dd>No</dd>
+          <dt>Año</dt><dd><time datetime="2022">2022</time></dd>
+          <dt>Duración</dt><dd>aprox. <time datetime="PT44M">44 min</time></dd>
+          <dt>Director</dt><dd>-</dd>
+          <dt>Productor</dt><dd>-</dd>
+          <dt>Presupuesto</dt><dd>-</dd>
+        </dl>
+        <section>
+          <h4>Descripción</h4>
+          <p>El documental analiza diferencias entre tiburones machos y hembras y presta especial atención a hembras de gran tamaño y a su comportamiento dentro de diferentes especies.</p>
+        </section>
+        <section>
+          <h4>Representación del tiburón</h4>
+          <p>La narración coloca a las hembras como protagonistas y utiliza conceptos como tamaño, dominancia y poder. El título <cite lang="en">Shark Queens</cite> aplica la categoría humana de “reina” para describir a estos animales.</p>
+        </section>
+        <dl>
+          <dt>Mujeres en traje de baño como víctimas</dt><dd>No</dd>
+          <dt>Sexo del tiburón</dt><dd>Machos y hembras</dd>
+          <dt>Dónde verla</dt><dd>-</dd>
+          <dt>Categoría</dt><dd>Documental</dd>
+          <dt>Observaciones</dt><dd></dd>
+          <dt>Especie</dt><dd>-</dd>
+        </dl>
+        <footer>
+          <p><a href="#indice">Volver al índice</a></p>
+        </footer>
+      </article>
+
+      <!-- 26 -->
+      <article id="shark-women">
+        <header>
+          <h3>26. <cite lang="en">Shark Women: Ghosted by Great Whites</cite></h3>
+        </header>
+        <dl>
+          <dt>Tipo</dt><dd>Documental / Especial televisivo</dd>
+          <dt>Género</dt><dd>Naturaleza / Ciencia</dd>
+          <dt>Sharksploitation</dt><dd>No</dd>
+          <dt>Año</dt><dd><time datetime="2022">2022</time></dd>
+          <dt>Duración</dt><dd>aprox. <time datetime="PT44M">44 min</time></dd>
+          <dt>Director</dt><dd>-</dd>
+          <dt>Productor</dt><dd>-</dd>
+          <dt>Presupuesto</dt><dd>-</dd>
+        </dl>
+        <section>
+          <h4>Descripción</h4>
+          <p>Un grupo de investigadoras estudia la desaparición de grandes tiburones blancos de determinadas zonas de Sudáfrica e intenta identificar los factores que modificaron su distribución.</p>
+        </section>
+        <section>
+          <h4>Representación del tiburón</h4>
+          <p>El tiburón aparece principalmente como objeto de investigación científica. Las mujeres ocupan el papel de investigadoras y observadoras en lugar de víctimas de los animales.</p>
+        </section>
+        <dl>
+          <dt>Mujeres en traje de baño como víctimas</dt><dd>No</dd>
+          <dt>Sexo del tiburón</dt><dd>Varios</dd>
+          <dt>Dónde verla</dt><dd>-</dd>
+          <dt>Categoría</dt><dd>Documental</dd>
+          <dt>Observaciones</dt><dd></dd>
+          <dt>Especie</dt><dd>Tiburón blanco</dd>
+        </dl>
+        <footer>
+          <p><a href="#indice">Volver al índice</a></p>
+        </footer>
+      </article>
+
+      <!-- 27 -->
+      <article id="envoy-shark-cull">
+        <header>
+          <h3>27. <cite lang="en">Envoy: Shark Cull</cite></h3>
+        </header>
+        <dl>
+          <dt>Tipo</dt><dd>Documental</dd>
+          <dt>Género</dt><dd>Ambiental / Investigación / Conservación</dd>
+          <dt>Sharksploitation</dt><dd>No</dd>
+          <dt>Año</dt><dd><time datetime="2021">2021</time></dd>
+          <dt>Duración</dt><dd><time datetime="PT90M">90 min</time></dd>
+          <dt>Director</dt><dd>Andre Borell</dd>
+          <dt>Productor</dt><dd>Andre Borell</dd>
+          <dt>Presupuesto</dt><dd>-</dd>
+        </dl>
+        <section>
+          <h4>Descripción</h4>
+          <p>Investiga programas australianos que utilizan redes y líneas con anzuelos para reducir los encuentros entre humanos y tiburones. Documenta también sus consecuencias para tiburones y otras especies marinas.</p>
+        </section>
+        <section>
+          <h4>Representación del tiburón</h4>
+          <p>Los tiburones aparecen como animales afectados por políticas humanas diseñadas a partir del riesgo de ataques. El documental desplaza la violencia del tiburón hacia los mecanismos utilizados para controlarlo o eliminarlo.</p>
+        </section>
+        <dl>
+          <dt>Mujeres en traje de baño como víctimas</dt><dd>No</dd>
+          <dt>Sexo del tiburón</dt><dd>Varios</dd>
+          <dt>Dónde verla</dt><dd>Envoy: Shark Cull</dd>
+          <dt>Categoría</dt><dd>Documental</dd>
+          <dt>Observaciones</dt><dd></dd>
+          <dt>Especie</dt><dd>-</dd>
+        </dl>
+        <footer>
+          <p><a href="#indice">Volver al índice</a></p>
+        </footer>
+      </article>
+
+      <!-- 28 -->
+      <article id="beyond-the-cage-of-fear">
+        <header>
+          <h3>28. <cite lang="en">Great White Shark: Beyond the Cage of Fear</cite></h3>
+        </header>
+        <dl>
+          <dt>Tipo</dt><dd>Documental</dd>
+          <dt>Género</dt><dd>Naturaleza / Conservación</dd>
+          <dt>Sharksploitation</dt><dd>No</dd>
+          <dt>Año</dt><dd><time datetime="2013">2013</time></dd>
+          <dt>Duración</dt><dd>aprox. <time datetime="PT52M">52 min</time></dd>
+          <dt>Director</dt><dd>Steve Morris</dd>
+          <dt>Productor</dt><dd>-</dd>
+          <dt>Presupuesto</dt><dd>-</dd>
+        </dl>
+        <section>
+          <h4>Descripción</h4>
+          <p>El documental analiza el turismo de observación de grandes tiburones blancos mediante jaulas y cuestiona la manera en que estas experiencias construyen la relación entre personas y tiburones.</p>
+        </section>
+        <section>
+          <h4>Representación del tiburón</h4>
+          <p>El tiburón aparece asociado con miedo y riesgo dentro de la industria turística, mientras el documental examina cómo la jaula, la cámara y la expectativa de peligro condicionan esa representación.</p>
+        </section>
+        <dl>
+          <dt>Mujeres en traje de baño como víctimas</dt><dd>No</dd>
+          <dt>Sexo del tiburón</dt><dd>Varios</dd>
+          <dt>Dónde verla</dt><dd>-</dd>
+          <dt>Categoría</dt><dd>Documental</dd>
+          <dt>Observaciones</dt><dd></dd>
+          <dt>Especie</dt><dd>Tiburón blanco</dd>
+        </dl>
+        <footer>
+          <p><a href="#indice">Volver al índice</a></p>
+        </footer>
+      </article>
+
+      <!-- 29 -->
+      <article id="shark-girl">
+        <header>
+          <h3>29. <cite lang="en">Shark Girl</cite></h3>
+        </header>
+        <dl>
+          <dt>Tipo</dt><dd>Documental</dd>
+          <dt>Género</dt><dd>Biográfico / Naturaleza / Conservación</dd>
+          <dt>Sharksploitation</dt><dd>No</dd>
+          <dt>Año</dt><dd><time datetime="2014">2014</time></dd>
+          <dt>Duración</dt><dd>aprox. <time datetime="PT57M">57 min</time></dd>
+          <dt>Directora</dt><dd>Gisela Kaufmann</dd>
+          <dt>Productores</dt><dd>-</dd>
+          <dt>Presupuesto</dt><dd>-</dd>
+        </dl>
+        <section>
+          <h4>Descripción</h4>
+          <p>El documental sigue a Madison Stewart, una joven australiana dedicada a filmar y proteger tiburones. Su trabajo se centra en documentar estos animales y denunciar las amenazas humanas contra sus poblaciones.</p>
+        </section>
+        <section>
+          <h4>Representación del tiburón</h4>
+          <p>Los tiburones son presentados como animales con los que puede existir proximidad sin que necesariamente ocurra un ataque. La figura femenina aparece como observadora y defensora en lugar de víctima.</p>
+        </section>
+        <dl>
+          <dt>Mujeres en traje de baño como víctimas</dt><dd>No</dd>
+          <dt>Sexo del tiburón</dt><dd>Varios</dd>
+          <dt>Dónde verla</dt><dd>-</dd>
+          <dt>Categoría</dt><dd>Documental</dd>
+          <dt>Observaciones</dt><dd></dd>
+          <dt>Especie</dt><dd>-</dd>
+        </dl>
+        <footer>
+          <p><a href="#indice">Volver al índice</a></p>
+        </footer>
+      </article>
+
+      <!-- 30 -->
+      <article id="shark-nation">
+        <header>
+          <h3>30. <cite lang="en">Shark Nation</cite></h3>
+        </header>
+        <dl>
+          <dt>Tipo</dt><dd>Documental</dd>
+          <dt>Género</dt><dd>Naturaleza / Conservación / Investigación</dd>
+          <dt>Sharksploitation</dt><dd>No</dd>
+          <dt>Año</dt><dd><time datetime="2013">2013</time></dd>
+          <dt>Duración</dt><dd>aprox. <time datetime="PT44M">44 min</time></dd>
+          <dt>Director</dt><dd>-</dd>
+          <dt>Productor</dt><dd>-</dd>
+          <dt>Presupuesto</dt><dd>-</dd>
+        </dl>
+        <section>
+          <h4>Descripción</h4>
+          <p>Investigadores estudian poblaciones de tiburones, su función dentro de los ecosistemas y los efectos que la pesca y otras actividades humanas tienen sobre ellas.</p>
+        </section>
+        <section>
+          <h4>Representación del tiburón</h4>
+          <p>El tiburón se presenta como parte de una red ecológica y no únicamente en relación con los ataques a humanos. La narrativa se centra en poblaciones, equilibrio ambiental y conservación.</p>
+        </section>
+        <dl>
+          <dt>Mujeres en traje de baño como víctimas</dt><dd>No</dd>
+          <dt>Sexo del tiburón</dt><dd>Varios</dd>
+          <dt>Dónde verla</dt><dd>-</dd>
+          <dt>Categoría</dt><dd>Documental</dd>
+          <dt>Observaciones</dt><dd></dd>
+          <dt>Especie</dt><dd>-</dd>
+        </dl>
+        <footer>
+          <p><a href="#indice">Volver al índice</a></p>
+        </footer>
+      </article>
+
+      <!-- 31 -->
+      <article id="toro-vs-martillo">
+        <header>
+          <h3>31. <cite>Tiburón Toro vs Tiburón Martillo</cite></h3>
+        </header>
+        <dl>
+          <dt>Tipo</dt><dd>Documental / Episodio televisivo</dd>
+          <dt>Género</dt><dd>Naturaleza / Ciencia / Comportamiento animal</dd>
+          <dt>Sharksploitation</dt><dd>No</dd>
+          <dt>Año</dt><dd>-</dd>
+          <dt>Duración</dt><dd><time datetime="PT44M18S">44 min 18 s</time></dd>
+          <dt>Director</dt><dd>-</dd>
+          <dt>Productor</dt><dd>-</dd>
+          <dt>Presupuesto</dt><dd>-</dd>
+        </dl>
+        <section>
+          <h4>Descripción</h4>
+          <p>El documental compara tiburones toro y tiburones martillo a partir de sus características físicas, habilidades y comportamientos. La narración utiliza una estructura de enfrentamiento entre ambas especies.</p>
+        </section>
+        <section>
+          <h4>Representación del tiburón</h4>
+          <p>Los animales son representados como depredadores poderosos y competitivos. El uso de “vs.” transforma la comparación entre especies en una narrativa de combate, jerarquía y fuerza.</p>
+        </section>
+        <dl>
+          <dt>Mujeres en traje de baño como víctimas</dt><dd>No</dd>
+          <dt>Sexo del tiburón</dt><dd>Varios</dd>
+          <dt>Dónde verlo</dt><dd>YouTube / Nat Geo en Español</dd>
+          <dt>Categoría</dt><dd>Documental</dd>
+          <dt>Observaciones</dt><dd></dd>
+          <dt>Especie</dt><dd>Tiburón toro, tiburón martillo</dd>
+        </dl>
+        <footer>
+          <p><a href="#indice">Volver al índice</a></p>
+        </footer>
+      </article>
+
+      <!-- 32 -->
+      <article id="tiburones-de-mexico">
+        <header>
+          <h3>32. <cite>Tiburones de México</cite></h3>
+        </header>
+        <dl>
+          <dt>Tipo</dt><dd>Documental</dd>
+          <dt>Género</dt><dd>Naturaleza / Conservación / Fotografía submarina</dd>
+          <dt>Sharksploitation</dt><dd>No</dd>
+          <dt>Año</dt><dd><time datetime="2015">2015</time></dd>
+          <dt>Duración</dt><dd><time datetime="PT46M24S">46 min 24 s</time></dd>
+          <dt>Director / creador</dt><dd>Gerardo del Villar</dd>
+          <dt>Productor</dt><dd>-</dd>
+          <dt>Presupuesto</dt><dd>-</dd>
+        </dl>
+        <section>
+          <h4>Descripción</h4>
+          <p>Gerardo del Villar y un equipo de fotógrafos, videógrafos y biólogos recorren distintas zonas de México para documentar especies como el tiburón toro, tigre, blanco y ballena. El documental registra su presencia en el Caribe mexicano, Isla Mujeres, Mar de Cortés, Revillagigedo e Isla Guadalupe.</p>
+        </section>
+        <section>
+          <h4>Representación del tiburón</h4>
+          <p>El documental busca presentar a los tiburones como especies que requieren conservación y cuestionar parte de su imagen negativa. Al mismo tiempo, utiliza expresiones vinculadas con peligro, poder, cacería y frenesí alimenticio para describir algunas especies y comportamientos.</p>
+        </section>
+        <dl>
+          <dt>Mujeres en traje de baño como víctimas</dt><dd>No</dd>
+          <dt>Sexo del tiburón</dt><dd>Varios</dd>
+          <dt>Dónde verlo</dt><dd>YouTube / Gerardo del Villar</dd>
+          <dt>Categoría</dt><dd>Documental</dd>
+          <dt>Observaciones</dt><dd></dd>
+          <dt>Especie</dt><dd>Tiburón toro, tiburón tigre, tiburón blanco, tiburón ballena</dd>
+        </dl>
+        <footer>
+          <p><a href="#indice">Volver al índice</a></p>
+        </footer>
+      </article>
+
+      <!-- 33 -->
+      <article id="forecast-shark-attack">
+        <header>
+          <h3>33. <cite>Ataques de Tiburones: ¿Tan Predecibles como el Clima?</cite></h3>
+        </header>
+        <dl>
+          <dt>Título original</dt><dd><cite lang="en">Forecast: Shark Attack</cite></dd>
+          <dt>Tipo</dt><dd>Documental / Episodio televisivo</dd>
+          <dt>Género</dt><dd>Ciencia / Naturaleza / Investigación</dd>
+          <dt>Sharksploitation</dt><dd>No</dd>
+          <dt>Año</dt><dd><time datetime="2024">2024</time></dd>
+          <dt>Duración</dt><dd><time datetime="PT44M25S">44 min 25 s</time></dd>
+          <dt>Director</dt><dd>-</dd>
+          <dt>Productor</dt><dd>-</dd>
+          <dt>Presupuesto</dt><dd>-</dd>
+        </dl>
+        <section>
+          <h4>Descripción</h4>
+          <p>El episodio investiga si los ataques de tiburones pueden predecirse mediante factores ambientales como temperatura del agua, corrientes y otras condiciones naturales.</p>
+        </section>
+        <section>
+          <h4>Representación del tiburón</h4>
+          <p>El título coloca al tiburón dentro de una narrativa de ataque y peligro. El contenido, en cambio, explica los encuentros mediante factores ambientales y científicos y reduce la atribución de una intención deliberada de atacar.</p>
+        </section>
+        <dl>
+          <dt>Mujeres en traje de baño como víctimas</dt><dd>-</dd>
+          <dt>Sexo del tiburón</dt><dd>Varios</dd>
+          <dt>Dónde verlo</dt><dd><a href="https://www.youtube.com/watch?v=a97TvMbUrVQ&amp;utm_source=chatgpt.com" rel="noopener noreferrer">YouTube / Nat Geo en Español</a></dd>
+          <dt>Categoría</dt><dd>Documental</dd>
+          <dt>Observaciones</dt><dd></dd>
+          <dt>Especie</dt><dd>-</dd>
+        </dl>
+        <footer>
+          <p><a href="#indice">Volver al índice</a></p>
+        </footer>
+      </article>
+
+      <!-- 34 -->
+      <article id="man-vs-shark">
+        <header>
+          <h3>34. <cite>¡Hombre se Enfrenta a un Tiburón!</cite></h3>
+        </header>
+        <dl>
+          <dt>Título original</dt><dd><cite lang="en">Man vs. Shark</cite></dd>
+          <dt>Tipo</dt><dd>Documental / Especial televisivo</dd>
+          <dt>Género</dt><dd>Ciencia / Naturaleza / Experimento</dd>
+          <dt>Sharksploitation</dt><dd>No</dd>
+          <dt>Año</dt><dd><time datetime="2024">2024</time></dd>
+          <dt>Duración</dt><dd><time datetime="PT44M22S">44 min 22 s</time></dd>
+          <dt>Director</dt><dd>-</dd>
+          <dt>Productor</dt><dd>-</dd>
+          <dt>Presupuesto</dt><dd>-</dd>
+        </dl>
+        <section>
+          <h4>Descripción</h4>
+          <p>Un biólogo marino e inventor desarrolla un traje diseñado para resistir mordidas de tiburón. Después prueba el equipo mediante un acercamiento controlado con un tiburón tigre.</p>
+        </section>
+        <section>
+          <h4>Representación del tiburón</h4>
+          <p>El título construye una oposición directa entre “hombre” y “tiburón”. Términos como enfrentamiento, mordida, ataque y supervivencia convierten un experimento científico en una narrativa de combate entre humano y animal.</p>
+        </section>
+        <dl>
+          <dt>Mujeres en traje de baño como víctimas</dt><dd>No</dd>
+          <dt>Sexo del tiburón</dt><dd>-</dd>
+          <dt>Dónde verlo</dt><dd><a href="https://www.youtube.com/watch?v=mpgvpuLXzNg&amp;utm_source=chatgpt.com" rel="noopener noreferrer">YouTube / Nat Geo en Español</a></dd>
+          <dt>Categoría</dt><dd>Documental</dd>
+          <dt>Observaciones</dt><dd></dd>
+          <dt>Especie</dt><dd>Tiburón tigre</dd>
+        </dl>
+        <footer>
+          <p><a href="#indice">Volver al índice</a></p>
+        </footer>
+      </article>
+
+      <!-- 35 -->
+      <article id="big-sharks-rule">
+        <header>
+          <h3>35. <cite>Los Tiburones Más Peligrosos del Mundo: ¡Descúbrelos!</cite></h3>
+        </header>
+        <dl>
+          <dt>Título original</dt><dd><cite lang="en">Big Sharks Rule</cite></dd>
+          <dt>Tipo</dt><dd>Documental / Especial televisivo</dd>
+          <dt>Género</dt><dd>Naturaleza / Ciencia / Depredadores</dd>
+          <dt>Sharksploitation</dt><dd>No</dd>
+          <dt>Año</dt><dd>-</dd>
+          <dt>Duración</dt><dd><time datetime="PT44M25S">44 min 25 s</time></dd>
+          <dt>Director</dt><dd>-</dd>
+          <dt>Productor</dt><dd>-</dd>
+          <dt>Presupuesto</dt><dd>-</dd>
+        </dl>
+        <section>
+          <h4>Descripción</h4>
+          <p>El documental presenta grandes especies como el tiburón blanco, tigre y toro y analiza características físicas, comportamientos y registros de encuentros con humanos.</p>
+        </section>
+        <section>
+          <h4>Representación del tiburón</h4>
+          <p>La representación se concentra en peligrosidad, tamaño y capacidad depredadora. El título y el lenguaje utilizado recurren a categorías como “peligroso”, “letal”, “temible”, “depredador” y “amenaza”.</p>
+        </section>
+        <dl>
+          <dt>Mujeres en traje de baño como víctimas</dt><dd>-</dd>
+          <dt>Sexo del tiburón</dt><dd>Varios</dd>
+          <dt>Dónde verlo</dt><dd>YouTube / Nat Geo en Español</dd>
+          <dt>Categoría</dt><dd>Documental</dd>
+          <dt>Observaciones</dt><dd></dd>
+          <dt>Especie</dt><dd>Tiburón blanco, tiburón tigre, tiburón toro</dd>
+        </dl>
+        <footer>
+          <p><a href="#indice">Volver al índice</a></p>
+        </footer>
+      </article>
+
+      <!-- 36 -->
+      <article id="documental-daily-tv">
+        <header>
+          <h3>36. <cite>DOCUMENTAL DE TIBURÓN COMPLETO</cite> — Daily TV</h3>
+        </header>
+        <dl>
+          <dt>Tipo</dt><dd>Documental / Video de naturaleza</dd>
+          <dt>Género</dt><dd>Naturaleza / Tiburones</dd>
+          <dt>Sharksploitation</dt><dd>-</dd>
+          <dt>Año</dt><dd>-</dd>
+          <dt>Duración</dt><dd><time datetime="PT1H15M">1 h 15 min</time></dd>
+          <dt>Director</dt><dd>-</dd>
+          <dt>Productor</dt><dd>-</dd>
+          <dt>Presupuesto</dt><dd>-</dd>
+        </dl>
+        <section>
+          <h4>Descripción</h4>
+          <p>El video aparece publicado bajo el título genérico <cite>DOCUMENTAL DE TIBURÓN COMPLETO</cite>. No se ha identificado con certeza cuál es la producción original.</p>
+        </section>
+        <section>
+          <h4>Representación del tiburón</h4>
+        </section>
+        <dl>
+          <dt>Mujeres en traje de baño como víctimas</dt><dd>-</dd>
+          <dt>Sexo del tiburón</dt><dd>-</dd>
+          <dt>Dónde verlo</dt><dd>YouTube / Daily TV</dd>
+          <dt>Categoría</dt><dd>Documental</dd>
+          <dt>Observaciones</dt><dd></dd>
+          <dt>Especie</dt><dd>-</dd>
+        </dl>
+        <footer>
+          <p><a href="#indice">Volver al índice</a></p>
+        </footer>
+      </article>
 
     </section>
 
   </main>
-
-  <!--
-    FOOTER
-    Contiene información de cierre o complementaria.
-  -->
-  <footer>
-
-    <p>Guía de estudio · HTML + CSS</p>
-
-  </footer>
 
 </body>
 </html>
