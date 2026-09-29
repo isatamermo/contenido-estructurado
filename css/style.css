@@ -6,14 +6,15 @@
   Variables reutilizables para mantener un sistema visual
   consistente en todo el documento.
 */
+@import url("https://use.typekit.net/bak6ydx.css")
 
 :root {
   --color-background: #f4f4f0;
   --color-text: #171717;
   --color-accent: #5b3df5;
 
-  --font-family-base: system-ui, Arial, Helvetica, sans-serif;
-
+  --font-family-base: "mislab-std", serif;
+--font-family-heading: "alternate-gothic-atf-thin", sans-serif;
   --font-size-body: 1rem;
   --font-size-h1: 3rem;
   --font-size-h2: 2rem;
@@ -63,7 +64,12 @@ body {
   HTML define la jerarquía.
   CSS controla su representación visual.
 */
-
+h1,h2,h3 {
+  font-family: var(--font-family-heading);
+  font-weight: normal;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
 h1 {
   font-size: var(--font-size-h1);
 }
