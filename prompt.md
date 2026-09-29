@@ -199,3 +199,12 @@ Prompt 6: Subcategoría	Característica	Ejemplos
 🌱 Eco-horror	Tiburón como consecuencia de contaminación, explotación o alteración ambiental	The Black Demon, Toxic Shark
 🧠 Psicológico / thriller	El tiburón funciona también como generador de paranoia o tensión	The Shallows, 47 Meters Down
 📺 Documental	Tiburones desde una perspectiva científica o naturalista	Sharkwater, Sharksploitation
+
+##Prompt 7: 
+hola, te voy a mandar la lista que me habias hecho pero quiero que me empiezes a categorizar por especie de tiburon, en las que no esta especificada la especie, si no encuentras la informacion de que pelicula es quitalo y si son varias especies nombralas y categorizalas en el orden por especie, que empiece de la especie que mas se menciona y a la que menos. tambien añade mitos que refuercen estos estereotipos sobre los tiburones mencionados. recuerda NO QUITAR NADA DE LA LISTA QUE TE VOY A MANDAR MAS QUE LO QUE YA TE ESPECIFIQUE ARRIBA! : 
+
+##Prompt 8: 
+añadir megalodon
+
+##Prompt 9: 
+te voy a mandar dos listas, una de categorias de tiburones donde no especifica tanto acerca de las peliculas y tiburones y otra en donde habla un poco mas acerca de estas peliculas y documentales. quiero que en la lista en donde hablo mas de solo los tiburones, le agregues las categorias de las peliculas que estan en la otra lista. NO QUITESNADA DE MI LISTA DE LOS TIBURONES POR ESPECIE 
