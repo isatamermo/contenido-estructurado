@@ -12,11 +12,10 @@
   --color-background: #17192f;
   --color-text: #ece8e8;
   --color-accent: #5289e0;
-
   --font-family-base: "mislab-std", serif;
---font-family-heading: "alternate-gothic-atf", sans-serif;
+  --font-family-heading: "alternate-gothic-atf", sans-serif;
   --font-size-body: 1rem;
-  --font-size-h1: 10rem;
+  --font-size-h1: 15vw;
   --font-size-h2: 2rem;
   --font-size-h3: 1.25rem;
 }
@@ -66,12 +65,17 @@ body {
 */
 h1,h2,h3 {
   font-family: var(--font-family-heading);
-  font-weight: 900;
+  font-weight: 700;
   margin-top: 0;
   margin-bottom: 1rem;
 }
 h1 {
   font-size: var(--font-size-h1);
+  line-height: 1em;
+  margin: 5rem 0;
+  margin-top: 0;
+  margin-bottom: 0em;
+  margin: 0em 0;
 }
 
 h2 {
@@ -93,6 +97,74 @@ h3 {
 
 a {
   color: var(--color-accent);
+  margin-bottom: 1rem;
+}
+
+/*
+  ============================================================
+  BOTONES DE NAVEGACIÓN
+  ============================================================
+*/
+
+div[align="right"] {
+  width: 100%;
+  max-width: 1240px;
+  margin: 1rem auto 0;
+  padding: 0 2rem;
+  text-align: right;
+}
+
+div[align="right"] a {
+  display: inline-block;
+  margin: 0;
+}
+
+div[align="right"] button,
+#home > a[href="#ranking"],
+main article > a > button,
+#about a > button,
+footer a > button,
+main nav a > button,
+main li > a > button {
+  display: inline-block;
+  background: transparent;
+  border: 1px solid var(--color-accent);
+  border-radius: 999px;
+  color: var(--color-text);
+  font-family: var(--font-family-heading);
+  font-size: 0.9rem;
+  letter-spacing: 0.08em;
+  padding: 0.6rem 1.2rem;
+  cursor: pointer;
+  margin: 0;
+  text-decoration: none;
+}
+
+div[align="right"] button:hover,
+div[align="right"] button:focus,
+#home > a[href="#ranking"]:hover,
+#home > a[href="#ranking"]:focus,
+main article > a > button:hover,
+main article > a > button:focus,
+#about a > button:hover,
+#about a > button:focus,
+footer a > button:hover,
+footer a > button:focus,
+main nav a > button:hover,
+main nav a > button:focus,
+main li > a > button:hover,
+main li > a > button:focus {
+  background: var(--color-accent);
+  color: var(--color-background);
+}
+
+main li > a > button {
+  margin-top: 1.5rem;
+}
+
+#ranking article > a {
+  display: inline-block;
+  margin-bottom: 1.5rem;
 }
 
 
@@ -111,13 +183,19 @@ a {
   distribuye el espacio horizontal y centra la caja.
 */
 
-main {
+main, nav {
   width: 65%;
   min-width: 290px;
   max-width: 1240px;
   margin: 0 auto;
 }
-
+#home {
+  width: 100%;
+  min-width: 290px;
+  max-width: 1240px;
+  margin: 1rem auto;
+  padding: 2rem;
+}
 
 /*
   ============================================================
@@ -125,14 +203,17 @@ main {
   ============================================================
 */
 
-header,
 main,
 footer {
-  padding: 2rem;
+  padding: 1rem;
 }
 
 section {
   margin-bottom: 3rem;
+}
+
+details li {
+  line-height: 1.6;
 }
 
 nav a {
