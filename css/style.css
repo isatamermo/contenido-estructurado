@@ -119,13 +119,7 @@ div[align="right"] a {
   margin: 0;
 }
 
-div[align="right"] button,
-#home > a[href="#ranking"],
-main article > a > button,
-#about a > button,
-footer a > button,
-main nav a > button,
-main li > a > button {
+.nav-link {
   display: inline-block;
   background: transparent;
   border: 1px solid var(--color-accent);
@@ -140,20 +134,7 @@ main li > a > button {
   text-decoration: none;
 }
 
-div[align="right"] button:hover,
-div[align="right"] button:focus,
-#home > a[href="#ranking"]:hover,
-#home > a[href="#ranking"]:focus,
-main article > a > button:hover,
-main article > a > button:focus,
-#about a > button:hover,
-#about a > button:focus,
-footer a > button:hover,
-footer a > button:focus,
-main nav a > button:hover,
-main nav a > button:focus,
-main li > a > button:hover,
-main li > a > button:focus {
+.nav-link:focus, .nav-link:hover {
   background: var(--color-accent);
   color: var(--color-background);
 }
@@ -194,9 +175,17 @@ main, nav {
   min-width: 290px;
   max-width: 1240px;
   margin: 1rem auto;
+  margin-top: 0rem;
   padding: 2rem;
 }
 
+#home[aria-labelledby="titulo-home"] {
+  margin-top: 4rem;
+}
+#home .nav-link {
+  font-size: 1.35em;
+  text-transform: uppercase;
+}
 /*
   ============================================================
   ESPACIADO BÁSICO
